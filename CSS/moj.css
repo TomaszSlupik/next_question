@@ -1,0 +1,69 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: gray;
+	font-family: "Montserrat", sans-serif;
+}
+
+.box {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: black;
+}
+h1,
+h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.bill {
+	width: 150px;
+	height: 100px;
+	background-position: 0 70%;
+	background-size: cover;
+}
+
+span {
+	font-weight: bold;
+}
+.billAnimation {
+	-webkit-animation: rotate-top 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+		both;
+	animation: rotate-top 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes rotate-top {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+		-webkit-transform-origin: top;
+		transform-origin: top;
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+		-webkit-transform-origin: top;
+		transform-origin: top;
+	}
+}
+@keyframes rotate-top {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+		-webkit-transform-origin: top;
+		transform-origin: top;
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+		-webkit-transform-origin: top;
+		transform-origin: top;
+	}
+}
